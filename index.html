@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Swiper js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+      <header>
+        <nav id="header">
+          <div class="logo">
+            <a href="#">Hotel</a>
+          </div>
+          <ul class="navbar">
+            <li class="nav-item"><a href="#" class="active">Home</a></li>
+            <li class="nav-item"><a href="#About">About</a></li>
+            <li class="nav-item"><a href="#Rooms">Rooms</a></li>
+            <li class="nav-item"><a href="#Service">Services</a></li>
+            <li class="nav-item"><a href="#Contact">Contact Us</a></li>
+            <li><i class="fa fa-close" onclick="toggleMenu()"></i></li>
+          </ul>
+          <div class="header-btn">Book Now</div>
+          <img src="assets/images/menu.png" class="menu" onclick="toggleMenu()">
+        </nav>
+        <div class="banner-content">
+          <h1>a brand luxurious hotel</h1>
+          <div class="banner-btn">Book Now</div>
+        </div>
+      </header>
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-up-long"></i>
+      </div>
+      <main>
+        <div class="about-container" id="About">
+          <div class="row">
+            <div class="col">
+              <h2>About</h2>
+              <h1>welcome to <span>Hotel</span></h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque necessitatibus laudantium quibusdam fugiat veniam voluptate dolorum aperiam voluptates expedita. Harum.</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-hotel"></i>
+                  <strong>1200</strong>
+                  <small>Rooms</small>
+                </li>
+                <li>
+                  <i class="fa-solid fa-users-gear"></i>
+                  <strong>1200</strong>
+                  <small>staff</small>
+                </li>
+                <li>
+                  <i class="fa-solid fa-users"></i>
+                  <strong>1200</strong>
+                  <small>clients</small>
+                </li>
+              </ul>
+              <div class="about-btn">explore more</div>
+            </div>
+            <div class="col">
+              <img src="assets/images/room_1.jpg">
+              <img src="assets/images/room_2.jpg">
+              <img src="assets/images/room_3.jpg">
+              <img src="assets/images/room_4.jpg">
+            </div>
+          </div>
+        </div>
+
+<!-- our rooms -->
+
+        <div class="room-container" id="Rooms">
+          <h2>Our <span>Rooms</span></h2>
+          <div class="row">
+            <div class="col">
+              <div class="image">
+                <img src="assets/images/bedroom_1.jpg">
+                <div class="amount">150$/day</div>
+              </div>
+              <div class="detail">
+                <div class="type">
+                  <strong>Silver</strong>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="features">
+                  <div class="feature">
+                    <i class="fa-solid fa-bed"></i>
+                    <small>3 Bed</small>
+                  </div>
+                  <div class="feature">
+                    <i class="fa-solid fa-bath"></i>
+                    <small>3 Bath</small>
+                  </div>
+                  <div class="feature">
+                    <i class="fa-solid fa-wifi"></i>
+                    <small>Wifi</small>
+                  </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
+                <div class="btn">Book Now</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="image">
+                <img src="assets/images/bedroom_2.jpg">
+                <div class="amount">100$/day</div>
+              </div>
+              <div class="detail">
+                <div class="type">
+                  <strong>Gold</strong>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="features">
+                  <div class="feature">
+                    <i class="fa-solid fa-bed"></i>
+                    <small>3 Bed</small>
+                  </div>
+                  <div class="feature">
+                    <i class="fa-solid fa-bath"></i>
+                    <small>3 Bath</small>
+                  </div>
+                  <div class="feature">
+                    <i class="fa-solid fa-wifi"></i>
+                    <small>Wifi</small>
+                  </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
+                <div class="btn">Book Now</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="image">
+                <img src="assets/images/bedroom_5.jpg">
+                <div class="amount">200$/day</div>
+              </div>
+              <div class="detail">
+                <div class="type">
+                  <strong>Platinum</strong>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="features">
+                  <div class="feature">
+                    <i class="fa-solid fa-bed"></i>
+                    <small>3 Bed</small>
+                  </div>
+                  <div class="feature">
+                    <i class="fa-solid fa-bath"></i>
+                    <small>3 Bath</small>
+                  </div>
+                  <div class="feature">
+                    <i class="fa-solid fa-wifi"></i>
+                    <small>Wifi</small>
+                  </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
+                <div class="btn">Book Now</div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+
+        <!-- our services -->
+
+         <div class="service-container" id="Service">
+          <h2>Our <span>Services</span></h2>
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-hotel"></i>
+              <strong>Rooms & Apartments</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-utensils"></i>
+              <strong>Food & Restuarant</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-spa"></i>
+              <strong>Spa & Fitness</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-person-swimming"></i>
+              <strong>Sports & Gaming</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <strong>Event & Party</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-dumbbell"></i>
+              <strong>GYM & Yoga</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
+            </div>
+          </div>
+        </div> 
+
+         <!-- Contact page -->
+        <div class="contact-container" id="Contact">
+          <h2>Contact <span>Us</span></h2>
+          <div class="row">
+            <div class="col">
+              <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013002.2285341844!2d75.64633889093825!3d10.815330609908758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475cc463361f0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1706502091461!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+              <div class="col-1">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+              </div>
+              <input type="text" placeholder="Subject">
+              <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+          </div>
+        </div> 
+      </main>
+
+      <!-- footer -->
+
+       <footer>
+        <div class="news-letter">
+          <input type="text" placeholder="Enter Your Email">
+          <div class="submit">Submit</div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <strong>Hotel</strong>
+           <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quae?</small>
+          </div>
+          <div class="col">
+            <strong>Contact</strong>
+            <div>
+              <p>Tamil Nadu,india</p>
+            </div>
+            <div>
+              <p>+9856436578</p>
+            </div>
+            <div>
+              <p>Hotel@gmail.com</p>
+            </div>
+            <div class="medias">
+              <div class="media">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="media">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="media">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="media">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <strong>Company</strong>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>About Us</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Contact Us</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Privacy Policy</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Terms & Condition</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Support</small>
+            </div>
+          </div>
+          <div class="col">
+            <strong>Services</strong>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Foods & Restuarant</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Spa & Fitness</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Sports & Gaming</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>Events & Party</small>
+            </div>
+            <div>
+              <i class="fa fa-chevron-right"></i>
+              <small>GYM & Yoga</small>
+            </div>
+          </div>
+        </div>
+      </footer> 
+
+    <!--swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
