@@ -45,6 +45,14 @@ var slideUp_3 = {
     duration:1500,
     easing:'ease',
 };
+var slideUp_4 = {
+    distance: '200px',
+    origin: 'bottom',
+    delay:1300,
+    opacity: 0,
+    duration:1500,
+    easing:'ease',
+};
 
 var fade={
     opacity:0,
@@ -81,6 +89,7 @@ var zoom_4={
 ScrollReveal().reveal('.slide-up-1', slideUp_1);
 ScrollReveal().reveal('.slide-up-2', slideUp_2);
 ScrollReveal().reveal('.slide-up-3', slideUp_3);
+ScrollReveal().reveal('.slide-up-4', slideUp_4);
 ScrollReveal().reveal('.fade', fade);
 ScrollReveal().reveal('.zoom-1', zoom_1);
 ScrollReveal().reveal('.zoom-2', zoom_2);
