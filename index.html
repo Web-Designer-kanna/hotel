@@ -13,328 +13,398 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     <!--scroll reveal cdn -->
-     <script src="https://unpkg.com/scrollreveal"></script>
+    <!--scroll reveal cdn -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    
-        <header style="background-image: url(assets/images/hotel_bg.jpg);">
-          <nav id="header">
-            <div class="logo">
-              <a href="#">Hotel</a>
-            </div>
-            <ul class="navbar">
-              <li><i class="fa fa-close" onclick="toggleMenu()"></i></li>
-              <li class="nav-item"><a href="index.html" class="active">Home</a></li>
-              <li class="nav-item"><a href="About.html">About</a></li>
-              <li class="nav-item"><a href="Room.html">Rooms</a></li>
-              <li class="nav-item"><a href="Service.html">Services</a></li>
-              <li class="nav-item"><a href="Contact.html">Contact Us</a></li>
-            </ul>
-            <div class="header-btn">Book Now</div>
-            <img src="assets/images/menu.png" class="menu" onclick="toggleMenu()">
-          </nav>
-          <div class="banner-content">
-            <h1>a brand luxurious hotel</h1>
-            <div class="banner-btn">Book Now</div>
-          </div>
-         
-        </header>
-     
-      <div class="arrow">
-        <i class="fa-solid fa-arrow-up-long"></i>
+    <header style="background-image: url(assets/images/hotel_bg.jpg)">
+      <nav id="header">
+        <div class="logo">
+          <a href="index.html">Hotel</a>
+        </div>
+        <ul class="navbar">
+          <li><i class="fa fa-close" onclick="toggleMenu()"></i></li>
+          <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+          <li class="nav-item"><a href="About.html">About</a></li>
+          <li class="nav-item"><a href="Room.html">Rooms</a></li>
+          <li class="nav-item"><a href="Service.html">Services</a></li>
+          <li class="nav-item"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+        <div class="header-btn" onclick="Modalopen()">Book Now</div>
+        <img src="assets/images/menu.png" class="menu" onclick="toggleMenu()" />
+      </nav>
+      <div class="banner-content">
+        <h1>a brand luxurious hotel</h1>
+        <div class="banner-btn">Book Now</div>
       </div>
-      <main>
-        <div class="about-container" id="About">
-          <div class="row">
-            <div class="col">
-              <h2>About</h2>
-              <h1>welcome to <span>Hotel</span></h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque necessitatibus laudantium quibusdam fugiat veniam voluptate dolorum aperiam voluptates expedita. Harum.</p>
-              <ul>
-                <li>
-                  <i class="fa-solid fa-hotel"></i>
-                  <strong>1200</strong>
-                  <small>Rooms</small>
-                </li>
-                <li>
-                  <i class="fa-solid fa-users-gear"></i>
-                  <strong>1200</strong>
-                  <small>staff</small>
-                </li>
-                <li>
-                  <i class="fa-solid fa-users"></i>
-                  <strong>1200</strong>
-                  <small>clients</small>
-                </li>
-              </ul>
-              <div class="about-btn">explore more</div>
-            </div>
-            <div class="col">
-              <img src="assets/images/about_image_1.jpeg" class="zoom-1">
-              <img src="assets/images/about_image_2.jpg" class="zoom-2">
-              <img src="assets/images/about_image_3.jpg" class="zoom-3">
-              <img src="assets/images/about_image_4.jpg" class="zoom-4">
-            </div>
-          </div>
+    </header>
+
+    <!-- Model for Hotel Booking -->
+    <div class="modal">
+      <div class="modal-content">
+        <form id="formcontainer">
+          <input type="date" id="fromdate" />
+          <input type="date" id="todate" />
+          <select id="select-1">
+            <option selected>Adult</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <select id="select-2">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <div class="modal-btn">Book Now</div>
+        </form>
+        <div class="modal-closeBtn">
+          <i class="fa fa-close"></i>
         </div>
+      </div>
+    </div>
 
-<!-- our rooms -->
-
-        <div class="room-container" id="Rooms">
-          <h2>Our <span>Rooms</span></h2>
-          <div class="row">
-            <div class="col slide-up-1">
-              <div class="image">
-                <img src="assets/images/hotel_1.jpg">
-                <div class="amount">150$/day</div>
-              </div>
-              <div class="detail">
-                <div class="type">
-                  <strong>Silver</strong>
-                  <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-                <div class="features">
-                  <div class="feature">
-                    <i class="fa-solid fa-bed"></i>
-                    <small>3 Bed</small>
-                  </div>
-                  <div class="feature">
-                    <i class="fa-solid fa-bath"></i>
-                    <small>3 Bath</small>
-                  </div>
-                  <div class="feature">
-                    <i class="fa-solid fa-wifi"></i>
-                    <small>Wifi</small>
-                  </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-                <div class="btn">Book Now</div>
-              </div>
-            </div>
-            <div class="col slide-up-2">
-              <div class="image">
-                <img src="assets/images/hotel_2.jpg">
-                <div class="amount">100$/day</div>
-              </div>
-              <div class="detail">
-                <div class="type">
-                  <strong>Gold</strong>
-                  <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-                <div class="features">
-                  <div class="feature">
-                    <i class="fa-solid fa-bed"></i>
-                    <small>3 Bed</small>
-                  </div>
-                  <div class="feature">
-                    <i class="fa-solid fa-bath"></i>
-                    <small>3 Bath</small>
-                  </div>
-                  <div class="feature">
-                    <i class="fa-solid fa-wifi"></i>
-                    <small>Wifi</small>
-                  </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-                <div class="btn">Book Now</div>
-              </div>
-            </div>
-            <div class="col slide-up-3">
-              <div class="image">
-                <img src="assets/images/hotel_3.jpg">
-                <div class="amount">200$/day</div>
-              </div>
-              <div class="detail">
-                <div class="type">
-                  <strong>Platinum</strong>
-                  <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-                <div class="features">
-                  <div class="feature">
-                    <i class="fa-solid fa-bed"></i>
-                    <small>3 Bed</small>
-                  </div>
-                  <div class="feature">
-                    <i class="fa-solid fa-bath"></i>
-                    <small>3 Bath</small>
-                  </div>
-                  <div class="feature">
-                    <i class="fa-solid fa-wifi"></i>
-                    <small>Wifi</small>
-                  </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-                <div class="btn">Book Now</div>
-              </div>
-            </div>
-          </div>
-        </div> 
-
-
-        <!-- our services -->
-
-         <div class="service-container" id="Service">
-          <h2>Our <span>Services</span></h2>
-          <div class="row">
-            <div class="col slide-up-1">
-              <i class="fa-solid fa-hotel"></i>
-              <strong>Rooms & Apartments</strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
-            </div>
-            <div class="col slide-up-2">
-              <i class="fa-solid fa-utensils"></i>
-              <strong>Food & Restuarant</strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
-            </div>
-            <div class="col slide-up-3">
-              <i class="fa-solid fa-spa"></i>
-              <strong>Spa & Fitness</strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
-            </div>
-            <div class="col slide-up-1">
-              <i class="fa-solid fa-person-swimming"></i>
-              <strong>Sports & Gaming</strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
-            </div>
-            <div class="col slide-up-2">
-              <i class="fa-solid fa-champagne-glasses"></i>
-              <strong>Event & Party</strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
-            </div>
-            <div class="col slide-up-3">
-              <i class="fa-solid fa-dumbbell"></i>
-              <strong>GYM & Yoga</strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio?</p>
-            </div>
-          </div>
-        </div> 
-
-         <!-- Contact page -->
-        <div class="contact-container" id="Contact">
-          <h2>Contact <span>Us</span></h2>
-          <div class="row">
-            <div class="col">
-              <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013002.2285341844!2d75.64633889093825!3d10.815330609908758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475cc463361f0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1706502091461!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col">
-              <div class="col-1">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-              </div>
-              <input type="text" placeholder="Subject">
-              <textarea cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-          </div>
-        </div> 
-      </main>
-
-      <!-- footer -->
-
-       <footer class="fade">
-        <div class="news-letter">
-          <input type="text" placeholder="Enter Your Email">
-          <div class="submit">Submit</div>
-        </div>
+    <div class="arrow">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+    <main>
+      <div class="about-container" id="About">
         <div class="row">
           <div class="col">
-            <strong>Hotel</strong>
-           <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quae?</small>
+            <h2>About</h2>
+            <h1>welcome to <span>Hotel</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              necessitatibus laudantium quibusdam fugiat veniam voluptate
+              dolorum aperiam voluptates expedita. Harum.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-hotel"></i>
+                <strong>1200</strong>
+                <small>Rooms</small>
+              </li>
+              <li>
+                <i class="fa-solid fa-users-gear"></i>
+                <strong>1200</strong>
+                <small>staff</small>
+              </li>
+              <li>
+                <i class="fa-solid fa-users"></i>
+                <strong>1200</strong>
+                <small>clients</small>
+              </li>
+            </ul>
+            <div class="about-btn">explore more</div>
           </div>
           <div class="col">
-            <strong>Contact</strong>
-            <div>
-              <p>Tamil Nadu,india</p>
+            <img src="assets/images/about_image_1.jpeg" class="zoom-1" />
+            <img src="assets/images/about_image_2.jpg" class="zoom-2" />
+            <img src="assets/images/about_image_3.jpg" class="zoom-3" />
+            <img src="assets/images/about_image_4.jpg" class="zoom-4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- our rooms -->
+
+      <div class="room-container" id="Rooms">
+        <h2>Our <span>Rooms</span></h2>
+        <div class="row">
+          <div class="col slide-up-1">
+            <div class="image">
+              <img src="assets/images/hotel_1.jpg" />
+              <div class="amount">150$/day</div>
             </div>
-            <div>
-              <p>+9856436578</p>
-            </div>
-            <div>
-              <p>Hotel@gmail.com</p>
-            </div>
-            <div class="medias">
-              <div class="media">
-                <i class="fa-brands fa-facebook"></i>
+            <div class="detail">
+              <div class="type">
+                <strong>Silver</strong>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
               </div>
-              <div class="media">
-                <i class="fa-brands fa-instagram"></i>
+              <div class="features">
+                <div class="feature">
+                  <i class="fa-solid fa-bed"></i>
+                  <small>3 Bed</small>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-bath"></i>
+                  <small>3 Bath</small>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-wifi"></i>
+                  <small>Wifi</small>
+                </div>
               </div>
-              <div class="media">
-                <i class="fa-brands fa-youtube"></i>
-              </div>
-              <div class="media">
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Adipisci obcaecati nesciunt fuga nulla earum veniam?
+              </p>
+              <a href="Room.html" class="btn">Book Now</a>
             </div>
           </div>
-          <div class="col">
-            <strong>Company</strong>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>About Us</small>
+          <div class="col slide-up-2">
+            <div class="image">
+              <img src="assets/images/hotel_2.jpg" />
+              <div class="amount">100$/day</div>
             </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Contact Us</small>
-            </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Privacy Policy</small>
-            </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Terms & Condition</small>
-            </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Support</small>
+            <div class="detail">
+              <div class="type">
+                <strong>Gold</strong>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <i class="fa-solid fa-bed"></i>
+                  <small>3 Bed</small>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-bath"></i>
+                  <small>3 Bath</small>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-wifi"></i>
+                  <small>Wifi</small>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Adipisci obcaecati nesciunt fuga nulla earum veniam?
+              </p>
+              <a href="Room.html" class="btn">Book Now</a>
             </div>
           </div>
-          <div class="col">
-            <strong>Services</strong>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Foods & Restuarant</small>
+          <div class="col slide-up-3">
+            <div class="image">
+              <img src="assets/images/hotel_3.jpg" />
+              <div class="amount">200$/day</div>
             </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Spa & Fitness</small>
-            </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Sports & Gaming</small>
-            </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>Events & Party</small>
-            </div>
-            <div>
-              <i class="fa fa-chevron-right"></i>
-              <small>GYM & Yoga</small>
+            <div class="detail">
+              <div class="type">
+                <strong>Platinum</strong>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <i class="fa-solid fa-bed"></i>
+                  <small>3 Bed</small>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-bath"></i>
+                  <small>3 Bath</small>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-wifi"></i>
+                  <small>Wifi</small>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Adipisci obcaecati nesciunt fuga nulla earum veniam?
+              </p>
+              <a href="Room.html" class="btn">Book Now</a>
             </div>
           </div>
         </div>
-      </footer> 
+      </div>
 
-    
+      <!-- our services -->
+
+      <div class="service-container" id="Service">
+        <h2>Our <span>Services</span></h2>
+        <div class="row">
+          <div class="col slide-up-1">
+            <i class="fa-solid fa-hotel"></i>
+            <strong>Rooms & Apartments</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              optio?
+            </p>
+          </div>
+          <div class="col slide-up-2">
+            <i class="fa-solid fa-utensils"></i>
+            <strong>Food & Restuarant</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              optio?
+            </p>
+          </div>
+          <div class="col slide-up-3">
+            <i class="fa-solid fa-spa"></i>
+            <strong>Spa & Fitness</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              optio?
+            </p>
+          </div>
+          <div class="col slide-up-1">
+            <i class="fa-solid fa-person-swimming"></i>
+            <strong>Sports & Gaming</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              optio?
+            </p>
+          </div>
+          <div class="col slide-up-2">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <strong>Event & Party</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              optio?
+            </p>
+          </div>
+          <div class="col slide-up-3">
+            <i class="fa-solid fa-dumbbell"></i>
+            <strong>GYM & Yoga</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              optio?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact page -->
+      <div class="contact-container" id="Contact">
+        <h2>Contact <span>Us</span></h2>
+        <div class="row">
+          <div class="col">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013002.2285341844!2d75.64633889093825!3d10.815330609908758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475cc463361f0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1706502091461!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col">
+            <div class="col-1">
+              <input type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Your Email" />
+            </div>
+            <input type="text" placeholder="Subject" />
+            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="fade">
+      <div class="news-letter">
+        <input type="text" placeholder="Enter Your Email" />
+        <div class="submit">Submit</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong>Hotel</strong>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            quae?</small
+          >
+        </div>
+        <div class="col">
+          <strong>Contact</strong>
+          <div>
+            <p>Tamil Nadu,india</p>
+          </div>
+          <div>
+            <p>+9856436578</p>
+          </div>
+          <div>
+            <p>Hotel@gmail.com</p>
+          </div>
+          <div class="medias">
+            <div class="media">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="media">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="media">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="media">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <strong>Company</strong>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>About Us</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Contact Us</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Privacy Policy</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Terms & Condition</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Support</small>
+          </div>
+        </div>
+        <div class="col">
+          <strong>Services</strong>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Foods & Restuarant</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Spa & Fitness</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Sports & Gaming</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>Events & Party</small>
+          </div>
+          <div>
+            <i class="fa fa-chevron-right"></i>
+            <small>GYM & Yoga</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>

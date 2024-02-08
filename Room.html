@@ -18,73 +18,154 @@
 
     <!-- Swiper js Cdn -->
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-   
-
     <div class="swiper">
       <header class="rooms">
         <nav id="header">
           <div class="logo">
-            <a href="#">Hotel</a>
+            <a href="index.html">Hotel</a>
           </div>
           <ul class="navbar">
             <li><i class="fa fa-close" onclick="toggleMenu()"></i></li>
-            <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+            <li class="nav-item">
+              <a href="index.html" class="active">Home</a>
+            </li>
             <li class="nav-item"><a href="About.html">About</a></li>
             <li class="nav-item"><a href="Room.html">Rooms</a></li>
             <li class="nav-item"><a href="Service.html">Services</a></li>
             <li class="nav-item"><a href="Contact.html">Contact Us</a></li>
           </ul>
-          <div class="header-btn">Book Now</div>
-          <img src="assets/images/menu.png" class="menu" onclick="toggleMenu()" />
+          <div class="header-btn" onclick="Modalopen()">Book Now</div>
+          <img
+            src="assets/images/menu.png"
+            class="menu" onclick="toggleMenu()"
+          />
         </nav>
       </header>
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(assets/images/delhi.jpg);">
-            <div class="swiper-text">
-              <h1>Delhi</h1>
-              <p>A hotel is a commercial establishment that provides lodging, meals, and other services to guests, travelers, and tourists.</p>
-              <div class="btns">
-                <div class="btn">View Details</div>
-                <div class="btn">Book Now</div>
-              </div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(assets/images/delhi.jpg);
+          "
+        >
+          <div class="swiper-text">
+            <h1>Delhi</h1>
+            <p>
+              A hotel is a commercial establishment that provides lodging,
+              meals, and other services to guests, travelers, and tourists.
+            </p>
+            <div class="btns">
+              <div class="btn">View Details</div>
+              <div class="btn" onclick="Modalopen()">Book Now</div>
             </div>
+          </div>
         </div>
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(assets/images/bangalore.jpg);">
-            <div class="swiper-text">
-              <h1>Bangalore</h1>
-              <p>A hotel is a commercial establishment that provides lodging, meals, and other services to guests, travelers, and tourists.</p>
-              <div class="btns">
-                <div class="btn">View Details</div>
-                <div class="btn">Book Now</div>
-              </div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(assets/images/bangalore.jpg);
+          "
+        >
+          <div class="swiper-text">
+            <h1>Bangalore</h1>
+            <p>
+              A hotel is a commercial establishment that provides lodging,
+              meals, and other services to guests, travelers, and tourists.
+            </p>
+            <div class="btns">
+              <div class="btn">View Details</div>
+              <div class="btn" onclick="Modalopen()">Book Now</div>
             </div>
+          </div>
         </div>
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(assets/images/chennai.jpg);">
-            <div class="swiper-text">
-              <h1>Chennai</h1>
-              <p>A hotel is a commercial establishment that provides lodging, meals, and other services to guests, travelers, and tourists.</p>
-              <div class="btns">
-                <div class="btn">View Details</div>
-                <div class="btn">Book Now</div>
-              </div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(assets/images/chennai.jpg);
+          "
+        >
+          <div class="swiper-text">
+            <h1>Chennai</h1>
+            <p>
+              A hotel is a commercial establishment that provides lodging,
+              meals, and other services to guests, travelers, and tourists.
+            </p>
+            <div class="btns">
+              <div class="btn">View Details</div>
+              <div class="btn" onclick="Modalopen()">Book Now</div>
             </div>
+          </div>
         </div>
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(assets/images/ooty.jpg);">
-            <div class="swiper-text">
-              <h1>Mumbai</h1>
-              <p>A hotel is a commercial establishment that provides lodging, meals, and other services to guests, travelers, and tourists.</p>
-              <div class="btns">
-                <div class="btn">View Details</div>
-                <div class="btn">Book Now</div>
-              </div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(assets/images/ooty.jpg);
+          "
+        >
+          <div class="swiper-text">
+            <h1>Mumbai</h1>
+            <p>
+              A hotel is a commercial establishment that provides lodging,
+              meals, and other services to guests, travelers, and tourists.
+            </p>
+            <div class="btns">
+              <div class="btn">View Details</div>
+              <div class="btn" onclick="Modalopen()">Book Now</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model for Hotel Booking -->
+    <div class="modal">
+      <div class="modal-content">
+        <form id="formcontainer">
+          <input type="date" id="fromdate" />
+          <input type="date" id="todate" />
+          <select id="select-1">
+            <option selected>Adult</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <select id="select-2">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <div class="modal-btn">Book Now</div>
+        </form>
+        <div class="modal-closeBtn">
+          <i class="fa fa-close"></i>
         </div>
       </div>
     </div>
@@ -92,320 +173,127 @@
     <div class="arrow">
       <i class="fa-solid fa-arrow-up-long"></i>
     </div>
-  
-<!-- Rooms -->
 
-<div class="room-container" id="Rooms">
-  <h2>Our <span>Rooms</span></h2>
-  <div class="row Room-row">
-    <div class="col slide-up-1">
-      <div class="image">
-        <img src="assets/images/hotel_1.jpg">
-        <div class="amount">150$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Silver</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+    <!-- Rooms -->
+
+    <div class="room-container" id="Rooms">
+      <h2>Our <span>Rooms</span></h2>
+      <div class="row Room-row">
+        <div class="col slide-up-1">
+          <div class="image">
+            <img src="assets/images/hotel_1.jpg" />
+            <div class="amount">150$/day</div>
+          </div>
+          <div class="detail">
+            <div class="type">
+              <strong>Silver</strong>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="features">
+              <div class="feature">
+                <i class="fa-solid fa-bed"></i>
+                <small>3 Bed</small>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-bath"></i>
+                <small>3 Bath</small>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-wifi"></i>
+                <small>Wifi</small>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              obcaecati nesciunt fuga nulla earum veniam?
+            </p>
+            <div class="btn" onclick="Modalopen()">Book Now</div>
           </div>
         </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
+        <div class="col slide-up-2">
+          <div class="image">
+            <img src="assets/images/hotel_2.jpg" />
+            <div class="amount">100$/day</div>
           </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
+          <div class="detail">
+            <div class="type">
+              <strong>Gold</strong>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="features">
+              <div class="feature">
+                <i class="fa-solid fa-bed"></i>
+                <small>3 Bed</small>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-bath"></i>
+                <small>3 Bath</small>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-wifi"></i>
+                <small>Wifi</small>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              obcaecati nesciunt fuga nulla earum veniam?
+            </p>
+            <div class="btn" onclick="Modalopen()">Book Now</div>
           </div>
         </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
+        <div class="col slide-up-3">
+          <div class="image">
+            <img src="assets/images/hotel_3.jpg" />
+            <div class="amount">200$/day</div>
+          </div>
+          <div class="detail">
+            <div class="type">
+              <strong>Platinum</strong>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="features">
+              <div class="feature">
+                <i class="fa-solid fa-bed"></i>
+                <small>3 Bed</small>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-bath"></i>
+                <small>3 Bath</small>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-wifi"></i>
+                <small>Wifi</small>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              obcaecati nesciunt fuga nulla earum veniam?
+            </p>
+            <div class="btn" onclick="Modalopen()">Book Now</div>
+          </div>
+        </div>
       </div>
+
+      <div class="more-btn">More Rooms</div>
     </div>
-    <div class="col slide-up-2">
-      <div class="image">
-        <img src="assets/images/hotel_2.jpg">
-        <div class="amount">100$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Gold</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-3">
-      <div class="image">
-        <img src="assets/images/hotel_3.jpg">
-        <div class="amount">200$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Platinum</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-1">
-      <div class="image">
-        <img src="assets/images/hotel_1.jpg">
-        <div class="amount">150$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Silver</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-2">
-      <div class="image">
-        <img src="assets/images/hotel_2.jpg">
-        <div class="amount">100$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Gold</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-3">
-      <div class="image">
-        <img src="assets/images/hotel_3.jpg">
-        <div class="amount">200$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Platinum</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-1">
-      <div class="image">
-        <img src="assets/images/hotel_1.jpg">
-        <div class="amount">150$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Silver</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-2">
-      <div class="image">
-        <img src="assets/images/hotel_2.jpg">
-        <div class="amount">100$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Gold</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-    <div class="col slide-up-3">
-      <div class="image">
-        <img src="assets/images/hotel_3.jpg">
-        <div class="amount">200$/day</div>
-      </div>
-      <div class="detail">
-        <div class="type">
-          <strong>Platinum</strong>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-        <div class="features">
-          <div class="feature">
-            <i class="fa-solid fa-bed"></i>
-            <small>3 Bed</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-bath"></i>
-            <small>3 Bath</small>
-          </div>
-          <div class="feature">
-            <i class="fa-solid fa-wifi"></i>
-            <small>Wifi</small>
-          </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nesciunt fuga nulla earum veniam?</p>
-        <div class="btn">Book Now</div>
-      </div>
-    </div>
-  </div>
-</div>
     <!-- footer -->
 
     <footer class="fade">
@@ -497,16 +385,17 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/room.js"></script>
     <!-- Swiper Js bundle file -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
-        autoplay:{
-          delay:3000,
-          disableOnInteraction:false,
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
-        loop:true,
-});
+        loop: true,
+      });
     </script>
   </body>
 </html>

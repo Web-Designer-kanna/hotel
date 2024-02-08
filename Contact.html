@@ -21,7 +21,7 @@
         <header style="background-image: url(assets/images/contact_bg.jpg);">
           <nav id="header">
             <div class="logo">
-              <a href="#">Hotel</a>
+              <a href="index.html">Hotel</a>
             </div>
             <ul class="navbar">
           <li><i class="fa fa-close" onclick="toggleMenu()"></i></li>
@@ -31,16 +31,42 @@
               <li class="nav-item"><a href="Service.html">Services</a></li>
               <li class="nav-item"><a href="Contact.html">Contact Us</a></li>
             </ul>
-            <div class="header-btn">Book Now</div>
+            <div class="header-btn" onclick="Modalopen()">Book Now</div>
             <img src="assets/images/menu.png" class="menu" onclick="toggleMenu()">
           </nav>
           <div class="banner-content">
             <h1>Contact Us</h1>
-            <div class="banner-btn">Book Now</div>
           </div>
-         
         </header>
-     
+<!-- Model for Hotel Booking -->
+<div class="modal">
+  <div class="modal-content">
+    <form id="formcontainer">
+      <input type="date" id="fromdate">
+      <input type="date" id="todate">
+      <select id="select-1">
+        <option selected>Adult</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <select id="select-2">
+        <option selected>Children</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <div class="modal-btn">Book Now</div>
+    </form>
+    <div class="modal-closeBtn">
+      <i class="fa fa-close"></i>
+    </div>
+  </div>
+</div>     
       <div class="arrow">
         <i class="fa-solid fa-arrow-up-long"></i>
       </div>
