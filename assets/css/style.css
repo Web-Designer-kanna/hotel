@@ -1078,6 +1078,8 @@ footer .row .col div i {
   .modal .modal-content .modal-closeBtn {
     width: 30px;
     height: 30px;
+    top: -40px;
+    left: 50%;
     line-height: 30px;
   }
   .about-container {
